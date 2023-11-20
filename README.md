@@ -31,7 +31,7 @@ In this paper, two search algorithms are written and compared.
 
 1. Minimax algorithm with alpha-beta pruning
 
-Principle [Minimax()] : Each call recursively searches the decision tree, and each node is a simulated situation. In the maximization layer, the algorithm selects the move that can make the value of the evaluation function maximum; In the minimization layer, the algorithm selects the move that minimizes the value of the evaluation function, which uses maximizingPlayer to rotate between the maximum and minimization layers. The recursive dive ends at a predetermined depth.
+Method [Minimax()] : Each call recursively searches the decision tree, and each node is a simulated situation. In the maximization layer, the algorithm selects the move that can make the value of the evaluation function maximum; In the minimization layer, the algorithm selects the move that minimizes the value of the evaluation function, which uses maximizingPlayer to rotate between the maximum and minimization layers. The recursive dive ends at a predetermined depth.
 
 As it traverses the child nodes, the function uses alpha-beta pruning to optimize the search. If the evaluation value at a child node exceeds beta (for the minimization layer) or falls below alpha (for the maximization layer), the function terminates its search early and stops traversing the other child nodes.
 
@@ -45,7 +45,7 @@ Analysis: Minimax() searches alternately between maximized and minimized nodes, 
 
 2. Greedy algorithm
 
-Principle [GreedyMove()] : Based on the limitations of the Minimax algorithm, I wrote a greedy algorithm that iterates to get the highest value of the current dot move. Use the same evaluation function evaluate().
+Method [GreedyMove()] : Based on the limitations of the Minimax algorithm, I wrote a greedy algorithm that iterates to get the highest value of the current dot move. Use the same evaluation function evaluate().
 
 
 
